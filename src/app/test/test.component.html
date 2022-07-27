@@ -1,0 +1,21 @@
+ <div class="container">
+    <form [formGroup]="userForm" >
+        <div class="col-md-4 mt-4">
+            <label>FirstName</label>
+            <input type="text" #form formControlName="firstname"> 
+        </div><br>
+        <div class="col-md-4">
+            <label>LastName</label>
+            <input type="text" #form formControlName="lastname">
+        </div><br>
+        <div class="col-md-4">
+            <label>email</label>
+            <input type="text" #form formControlName="email">
+        </div>
+        <div class="col-md-4 mt-4">
+            <button type="button" class="btn btn-primary" (click)="submitForm()">Add</button>
+        </div>
+    </form><br>
+</div>
+
+<app-children [data]="post"></app-children>

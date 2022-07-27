@@ -1,0 +1,20 @@
+<div class="container" #inc>
+    <h1>this is Parent component</h1><hr>
+    <button type="button" class="btn btn-primary mt-5" (click)="onClickI()">Increse</button>&nbsp;
+
+    <button type="button" class="btn btn-primary mt-5" (click)="onClickD()">Decrese</button>
+ 
+<hr>
+
+        <div class="col-md-4">
+            <label class="form-label">Update</label>
+            <input type="text" [formControl]="update" class="form-control">
+        </div>
+        <div class="col-md-4 mt-4">
+            <button type="button" (click)="clickme()" class="btn btn-primary">Update</button>
+        </div>
+     
+    <br>
+</div>
+
+<app-second-component></app-second-component>
